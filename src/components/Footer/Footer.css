@@ -1,0 +1,40 @@
+
+.myA {
+    background-color: #f9f9f9;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.myB {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.myC {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.myV {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.myN {
+    margin-top: 10px;
+}
+
+.myN a {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.myN a:hover {
+    color: #00548f;
+}

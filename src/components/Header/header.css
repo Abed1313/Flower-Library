@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Navbar styles */
+  .UUnavbar {
+    background-color: #212529; /* Dark background */
+    padding: 1rem 1.5rem; /* Balanced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .UUnavbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .UUnavbar .navbar-brand {
+    color: #ffffff; /* White text */
+    font-size: 1.5rem;
+    font-weight: bold; /* Bold font weight for branding */
+    text-transform: uppercase; /* Uppercase for branding */
+    letter-spacing: 1px; /* Spacing between letters */
+  }
+  
+  .UUnavbar .me-auto {
+    display: flex;
+    gap: 1.5rem; /* Increased gap for better spacing */
+  }
+  
+  /* Link styles */
+  .custom-nav-link {
+    color: #adb5bd; /* Light gray text */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500; /* Medium font weight */
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Rounded corners */
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .custom-nav-link:hover,
+  .custom-nav-link:focus {
+    color: #ffffff; /* White text on hover */
+    background-color: #495057; /* Darker background on hover */
+  }
+  
+  .custom-nav-link.active {
+    color: #ffffff; /* White text for active link */
+    background-color: #6c757d; /* Even darker background for active link */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .UUnavbar .container {
+      flex-direction: column;
+    }
+  
+    .UUnavbar .me-auto {
+      flex-direction: column;
+      gap: 0.5rem; /* Adjusted gap for smaller screens */
+    }
+  
+    .custom-nav-link {
+      text-align: center;
+    }
+  }
+  

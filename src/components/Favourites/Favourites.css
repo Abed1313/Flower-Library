@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container Styles */
+.abbed {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Row Styles */
+.Abd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure even spacing */
+    align-items: stretch; /* Ensure all cards have the same height */
+    margin: -20px;
+}
+
+/* Column Styles */
+.abed {
+    flex: 0 1 300px; /* Fixed width for consistency */
+    margin: 20px; /* Increased margin for more separation */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; /* Fixed width */
+    height: 550px; /* Fixed height */
+    padding: 10px;
+    background-color: #fff;
+    display: flex; /* Make the card a flex container */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Space out children to place button at the bottom */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.abed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.abed button {
+    align-self: flex-end; /* Ensure button aligns to the bottom */
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .Abd {
+        justify-content: space-between; /* Adjust spacing for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .abed {
+        flex: 0 1 calc(50% - 40px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .abed {
+        flex: 0 1 100%; /* One card per row */
+    }
+}
